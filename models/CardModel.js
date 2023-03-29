@@ -4,6 +4,7 @@ const { Schema, model } = require("mongoose");
 const CardSchema = new Schema({
     user: { type: Schema.Types.ObjectId, required: true },
 
+    email: { type: String },
     authorization_code: { type: String, required: true }, //This is the code that is used to charge the card subsequently
     card_type: { type: String },                          // This tells you the card brand - Visa, Mastercard, etc
     last4: { type: String },                              // The last 4 digits of the card. This is one of the details you can use to help the user identify the card
