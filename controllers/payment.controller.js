@@ -9,6 +9,7 @@ const { verifyTransactionReference } = require("../modules/Paystack");
  * @param {import("express").Response} res 
  */
 exports.verifyTransaction = async (req, res) => {
+    // eslint-disable-next-line no-unused-vars
     const {id} = req.user;
     const {reference} = req.params;
 
