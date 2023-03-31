@@ -10,7 +10,7 @@ const { verifyTransactionReference } = require("../modules/Paystack");
  */
 exports.verifyTransaction = async (req, res) => {
     // eslint-disable-next-line no-unused-vars
-    const {id} = req.user;
+    // const {id} = req.user;
     const {reference} = req.params;
 
     try {
@@ -21,7 +21,7 @@ exports.verifyTransaction = async (req, res) => {
         // check if signature in database, or save he card
 
         // return success for the transaction verification
-        successResponse(res, "Transaction successful.", {reference: data.reference});
+        successResponse(res, "Transaction successful.", data);
     } catch (error) {
         errorResponse(res, error?.message, error?.status);
     }

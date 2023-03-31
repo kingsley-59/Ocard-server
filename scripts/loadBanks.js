@@ -4,11 +4,20 @@ const { default: axios } = require("axios");
 const fs = require('fs/promises');
 const path = require("path");
 
-const BankDictionary = new Map();
+
+function compare(a, b) {
+    if (a < b) {
+        return -1;
+    }
+    if (a > b) {
+        return 1;
+    }
+    return 0;
+}
 
 async function loadBanksFromPaystack() {
     const apiUrl = 'https://api.paystack.co/bank';
-    
+
     const { data } = await axios.get(apiUrl);
     const banks = data?.data || [];
     console.log(`${banks.length} banks loaded from Paystack`);
@@ -26,34 +35,52 @@ async function loadBanksFromOkra() {
     return banks;
 }
 
-async function generateBanksData() {
+async function generateBanksData(sort = false) {
+    const BankDictionary = new Map();
+
     const paystackBanks = await loadBanksFromPaystack();
     const okraBanks = await loadBanksFromOkra();
 
     console.log('Reading data from okra banks');
     for (let bank of okraBanks) {
         let { name, icon, ussd, corporate, countries } = bank;
-        BankDictionary.set(bank.sortcode, {name, icon, ussd, corporate, countries});
+        BankDictionary.set(bank.slug, { name, icon, ussd, corporate, countries });
     }
     console.log('Done.');
     console.log(`Bank dictionary contains ${BankDictionary.size} bank(s).`);
+    // console.log(BankDictionary.entries());
 
+    const banksWithoutIcons = new Map();
     console.log('Reading data from paystack banks');
-    let containsSameCount = 0;
     for (let bank of paystackBanks) {
-        let bankExists = BankDictionary.has(bank.code);
+        let bankExists = BankDictionary.has(bank.slug);
         if (bankExists) {
-            containsSameCount++ ;
             const { code, slug, pay_with_bank, active } = bank;
-            const bankUpdate = {...BankDictionary.get(bank.code), code, slug, pay_with_bank, active};
-            BankDictionary.set(bank.code, bankUpdate);
+            const bankUpdate = { ...BankDictionary.get(bank.slug), code, slug, pay_with_bank, active };
+            BankDictionary.set(bank.slug, bankUpdate);
         } else {
-            const { code, slug, pay_with_bank, active } = bank;
-            BankDictionary.set(bank.code, { name: bank.name, code, slug, pay_with_bank, active });
+            const { name, code, slug, pay_with_bank, active } = bank;
+            banksWithoutIcons.set(bank.slug, { name, code, slug, pay_with_bank, active });
         }
     }
     console.log('Done.');
-    console.log(`${containsSameCount} banks exist in both datasets`);
+
+    console.log('Adding banks without icon to Bank dictionary');
+    banksWithoutIcons.forEach(bank => {
+        const { name, code, slug, pay_with_bank, active } = bank;
+        BankDictionary.set(bank.slug, { name, code, slug, pay_with_bank, active });
+    });
+    console.log('Done.');
+
+    if (sort) {
+        console.log('Sorting banks disctionary');
+        const mapSort = new Map([...BankDictionary.entries()].sort((a, b) => { console.log([a, b]); return compare(a[0], b[0]); }));
+        console.log('Done');
+
+        return mapSort;
+    } else {
+        return BankDictionary;
+    }
 }
 
 async function saveObjectToJsonFile(obj = {}) {
@@ -61,19 +88,24 @@ async function saveObjectToJsonFile(obj = {}) {
         const controller = new AbortController();
         const { signal } = controller;
         const data = new Uint8Array(Buffer.from(JSON.stringify(obj, null, 2)));
-        await fs.writeFile(path.join(__dirname, '/../banks.json'), data, { signal });
+        await fs.writeFile(path.join(__dirname, '/../public/banks.json'), data, { signal });
     } catch (error) {
         console.log(error);
     }
 }
 
-generateBanksData().then(async () => {
-    console.log('Merge complete.');
-    console.log(`Bank dictionary now contains ${BankDictionary.size} bank(s).`);
 
-    await saveObjectToJsonFile(Object.fromEntries(BankDictionary));
-    BankDictionary.clear();
-}).catch(error => {
-    console.log('Something went wrong.');
-    console.log(error);
-});
+async function loadBanks(sort = false) {
+    try {
+        const data = await generateBanksData(sort);
+        console.log('Merge complete.');
+        console.log(`Bank dictionary now contains ${data.size} bank(s).`);
+
+        await saveObjectToJsonFile(Object.fromEntries(data));
+    } catch (error) {
+        console.log('Something went wrong.');
+        console.log(error);
+    }
+}
+
+loadBanks(true);

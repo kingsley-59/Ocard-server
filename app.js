@@ -9,6 +9,7 @@ const indexRouter = require('./routes');
 const authRoutes = require('./routes/auth.routes');
 const userRoutes = require('./routes/user.routes');
 const BankRoutes = require('./routes/bank.routes');
+const PaymentRoutes = require('./routes/payment.routes');
 
 // DB connection
 // const MONGODB_URL = process.env.MONGODB_URL;
@@ -39,9 +40,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/api/v1/auth', authRoutes);
-app.use('/api/v1/users', userRoutes);
-app.use('/api/v1/banks', BankRoutes);
+app.use('/auth', authRoutes);
+app.use('/users', userRoutes);
+app.use('/banks', BankRoutes);
+app.use('/payments', PaymentRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

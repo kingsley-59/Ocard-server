@@ -1,0 +1,941 @@
+{
+  "9mobile-9payment-service-bank-ng": {
+    "name": "9mobile 9Payment Service Bank",
+    "code": "120001",
+    "slug": "9mobile-9payment-service-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "abbey-mortgage-bank": {
+    "name": "Abbey Mortgage Bank",
+    "code": "801",
+    "slug": "abbey-mortgage-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "above-only-mfb": {
+    "name": "Above Only MFB",
+    "code": "51204",
+    "slug": "above-only-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "abulesoro-mfb-ng": {
+    "name": "Abulesoro MFB",
+    "code": "51312",
+    "slug": "abulesoro-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "access-bank": {
+    "name": "Access Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Access+Bank+PLC+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "044",
+    "slug": "access-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "access-bank-diamond": {
+    "name": "Access Bank (Diamond)",
+    "code": "063",
+    "slug": "access-bank-diamond",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "accion-microfinance-bank-ng": {
+    "name": "Accion Microfinance Bank",
+    "code": "602",
+    "slug": "accion-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ahmadu-bello-university-microfinance-bank-ng": {
+    "name": "Ahmadu Bello University Microfinance Bank",
+    "code": "50036",
+    "slug": "ahmadu-bello-university-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "airtel-smartcash-psb-ng": {
+    "name": "Airtel Smartcash PSB",
+    "code": "120004",
+    "slug": "airtel-smartcash-psb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "alat": {
+    "name": "Alat",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/ALAT+by+Wema+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ]
+  },
+  "alat-by-wema": {
+    "name": "ALAT by WEMA",
+    "code": "035A",
+    "slug": "alat-by-wema",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "amju-unique-mfb": {
+    "name": "Amju Unique MFB",
+    "code": "50926",
+    "slug": "amju-unique-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ampersand-microfinance-bank-ng": {
+    "name": "AMPERSAND MICROFINANCE BANK",
+    "code": "51341",
+    "slug": "ampersand-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "aramoko-mfb": {
+    "name": "Aramoko MFB",
+    "code": "50083",
+    "slug": "aramoko-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "asosavings": {
+    "name": "ASO Savings and Loans",
+    "code": "401",
+    "slug": "asosavings",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "astrapolaris-mfb": {
+    "name": "Astrapolaris MFB LTD",
+    "code": "MFB50094",
+    "slug": "astrapolaris-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "bainescredit-mfb": {
+    "name": "Bainescredit MFB",
+    "code": "51229",
+    "slug": "bainescredit-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "banc-corp-microfinance-bank-ng": {
+    "name": "Banc Corp Microfinance Bank",
+    "code": "50117",
+    "slug": "banc-corp-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "bowen-microfinance-bank": {
+    "name": "Bowen Microfinance Bank",
+    "code": "50931",
+    "slug": "bowen-microfinance-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "carbon": {
+    "name": "Carbon",
+    "code": "565",
+    "slug": "carbon",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "cemcs-microfinance-bank": {
+    "name": "CEMCS Microfinance Bank",
+    "code": "50823",
+    "slug": "cemcs-microfinance-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "chanelle-microfinance-bank-limited-ng": {
+    "name": "Chanelle Microfinance Bank Limited",
+    "code": "50171",
+    "slug": "chanelle-microfinance-bank-limited-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "citibank-nigeria": {
+    "name": "Citibank Nigeria",
+    "code": "023",
+    "slug": "citibank-nigeria",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "consumer-microfinance-bank-ng": {
+    "name": "Consumer Microfinance Bank",
+    "code": "50910",
+    "slug": "consumer-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "corestep-mfb": {
+    "name": "Corestep MFB",
+    "code": "50204",
+    "slug": "corestep-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "coronation-merchant-bank": {
+    "name": "Coronation Merchant Bank",
+    "code": "559",
+    "slug": "coronation-merchant-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "crescent-mfb": {
+    "name": "Crescent MFB",
+    "code": "51297",
+    "slug": "crescent-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "diamond-bank": {
+    "name": "Diamond Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Diamond+Bank+Icon.svg",
+    "ussd": false,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ]
+  },
+  "dot-microfinance-bank-ng": {
+    "name": "Dot Microfinance Bank",
+    "code": "50162",
+    "slug": "dot-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ecobank-nigeria": {
+    "name": "Ecobank Nigeria",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Ecobank+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "050",
+    "slug": "ecobank-nigeria",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ekimogun-mfb-ng": {
+    "name": "Ekimogun MFB",
+    "code": "50263",
+    "slug": "ekimogun-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ekondo-microfinance-bank-ng": {
+    "name": "Ekondo Microfinance Bank",
+    "code": "098",
+    "slug": "ekondo-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "eyowo": {
+    "name": "Eyowo",
+    "code": "50126",
+    "slug": "eyowo",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "fairmoney-microfinance-bank-ng": {
+    "name": "Fairmoney Microfinance Bank",
+    "code": "51318",
+    "slug": "fairmoney-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "fidelity-bank": {
+    "name": "Fidelity Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Fidelity+Bank+Nigeria+Logo+Color.svg",
+    "ussd": true,
+    "corporate": false,
+    "countries": [
+      "NG"
+    ],
+    "code": "070",
+    "slug": "fidelity-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "firmus-mfb": {
+    "name": "Firmus MFB",
+    "code": "51314",
+    "slug": "firmus-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "first-bank-of-nigeria": {
+    "name": "First Bank of Nigeria",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/First+Bank+Nigeria+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "011",
+    "slug": "first-bank-of-nigeria",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "first-city-monument-bank": {
+    "name": "First City Monument Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/First+City+Monument+Bank+Ltd+Logo+Color.svg",
+    "ussd": false,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "214",
+    "slug": "first-city-monument-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "firsttrust-mortgage-bank-nigeria-ng": {
+    "name": "FirstTrust Mortgage Bank Nigeria",
+    "code": "107",
+    "slug": "firsttrust-mortgage-bank-nigeria-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "flourish-mfb-ng": {
+    "name": "FLOURISH MFB",
+    "code": "50315",
+    "slug": "flourish-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "fsdh-merchant-bank-limited": {
+    "name": "FSDH Merchant Bank Limited",
+    "code": "501",
+    "slug": "fsdh-merchant-bank-limited",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "gateway-mortgage-bank": {
+    "name": "Gateway Mortgage Bank LTD",
+    "code": "812",
+    "slug": "gateway-mortgage-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "globus-bank": {
+    "name": "Globus Bank",
+    "ussd": false,
+    "corporate": false,
+    "countries": [
+      "NG"
+    ],
+    "code": "00103",
+    "slug": "globus-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "gomoney": {
+    "name": "GoMoney",
+    "code": "100022",
+    "slug": "gomoney",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "goodnews-microfinance-bank-ng": {
+    "name": "Goodnews Microfinance Bank",
+    "code": "50739",
+    "slug": "goodnews-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "greenwich-merchant-bank-ng": {
+    "name": "Greenwich Merchant Bank",
+    "code": "562",
+    "slug": "greenwich-merchant-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "guaranty-trust-bank": {
+    "name": "Guaranty Trust Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Guaranty+Trust+Bank+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "058",
+    "slug": "guaranty-trust-bank",
+    "pay_with_bank": true,
+    "active": true
+  },
+  "hackman-microfinance-bank": {
+    "name": "Hackman Microfinance Bank",
+    "code": "51251",
+    "slug": "hackman-microfinance-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "hasal-microfinance-bank": {
+    "name": "Hasal Microfinance Bank",
+    "code": "50383",
+    "slug": "hasal-microfinance-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "heritage-bank": {
+    "name": "Heritage Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Heritage+Bank+PLC+Logo+Color.svg",
+    "ussd": false,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "030",
+    "slug": "heritage-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "hopepsb-ng": {
+    "name": "HopePSB",
+    "code": "120002",
+    "slug": "hopepsb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ibile-mfb": {
+    "name": "Ibile Microfinance Bank",
+    "code": "51244",
+    "slug": "ibile-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ikoyi-osun-mfb": {
+    "name": "Ikoyi Osun MFB",
+    "code": "50439",
+    "slug": "ikoyi-osun-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "ilaro-poly-microfinance-bank-ng": {
+    "name": "Ilaro Poly Microfinance Bank",
+    "code": "50442",
+    "slug": "ilaro-poly-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "infinity-mfb": {
+    "name": "Infinity MFB",
+    "code": "50457",
+    "slug": "infinity-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "jaiz-bank": {
+    "name": "Jaiz Bank",
+    "code": "301",
+    "slug": "jaiz-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "kadpoly-mfb": {
+    "name": "Kadpoly MFB",
+    "code": "50502",
+    "slug": "kadpoly-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "keystone-bank": {
+    "name": "Keystone Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Keystone+Bank+Limited+Logo+Color.svg",
+    "ussd": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "082",
+    "slug": "keystone-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "kredi-money-mfb": {
+    "name": "Kredi Money MFB LTD",
+    "code": "50200",
+    "slug": "kredi-money-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "kuda-bank": {
+    "name": "Kuda Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Kuda+icon.svg",
+    "ussd": false,
+    "countries": [
+      "NG"
+    ],
+    "code": "50211",
+    "slug": "kuda-bank",
+    "pay_with_bank": true,
+    "active": true
+  },
+  "lbic-plc": {
+    "name": "Lagos Building Investment Company Plc.",
+    "code": "90052",
+    "slug": "lbic-plc",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "links-mfb": {
+    "name": "Links MFB",
+    "code": "50549",
+    "slug": "links-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "living-trust-mortgage-bank": {
+    "name": "Living Trust Mortgage Bank",
+    "code": "031",
+    "slug": "living-trust-mortgage-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "lotus-bank": {
+    "name": "Lotus Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/ALAT+by+Wema+Logo+Color.svg",
+    "ussd": false,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "303",
+    "slug": "lotus-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "mayfair-mfb": {
+    "name": "Mayfair MFB",
+    "code": "50563",
+    "slug": "mayfair-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "mint-mfb": {
+    "name": "Mint MFB",
+    "code": "50304",
+    "slug": "mint-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "moniepoint-mfb-ng": {
+    "name": "Moniepoint MFB",
+    "code": "50515",
+    "slug": "moniepoint-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "mtn-momo-psb-ng": {
+    "name": "MTN Momo PSB",
+    "code": "120003",
+    "slug": "mtn-momo-psb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "paga": {
+    "name": "Paga",
+    "ussd": true,
+    "corporate": false,
+    "countries": [
+      "NG"
+    ],
+    "code": "100002",
+    "slug": "paga",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "palmpay": {
+    "name": "PalmPay",
+    "code": "999991",
+    "slug": "palmpay",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "parallex-bank": {
+    "name": "Parallex Bank",
+    "code": "104",
+    "slug": "parallex-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "parkway-ready-cash": {
+    "name": "Parkway - ReadyCash",
+    "code": "311",
+    "slug": "parkway-ready-cash",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "paycom": {
+    "name": "Paycom",
+    "code": "999992",
+    "slug": "paycom",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "paystack": {
+    "name": "Paystack",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ]
+  },
+  "personal-trust-mfb-ng": {
+    "name": "Personal Trust MFB",
+    "code": "51146",
+    "slug": "personal-trust-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "petra-microfinance-bank-plc": {
+    "name": "Petra Mircofinance Bank Plc",
+    "code": "50746",
+    "slug": "petra-microfinance-bank-plc",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "polaris-bank": {
+    "name": "Polaris Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Polaris+Bank+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "076",
+    "slug": "polaris-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "polyunwana-mfb-ng": {
+    "name": "Polyunwana MFB",
+    "code": "50864",
+    "slug": "polyunwana-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "premiumtrust-bank-ng": {
+    "name": "PremiumTrust Bank",
+    "code": "105",
+    "slug": "premiumtrust-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "providus-bank": {
+    "name": "Providus Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Providus+Bank+Icon.svg",
+    "ussd": false,
+    "corporate": false,
+    "countries": [
+      "NG"
+    ],
+    "code": "101",
+    "slug": "providus-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "quickfund-mfb": {
+    "name": "QuickFund MFB",
+    "code": "51293",
+    "slug": "quickfund-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "rand-merchant-bank": {
+    "name": "Rand Merchant Bank",
+    "code": "502",
+    "slug": "rand-merchant-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "refuge-mortgage-bank": {
+    "name": "Refuge Mortgage Bank",
+    "code": "90067",
+    "slug": "refuge-mortgage-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "rockshield-microfinance-bank-ng": {
+    "name": "ROCKSHIELD MICROFINANCE BANK",
+    "code": "50767",
+    "slug": "rockshield-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "rubies-bank": {
+    "name": "Rubies Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Rubies+Bank+Icon.svg",
+    "ussd": false,
+    "corporate": false,
+    "countries": [
+      "NG"
+    ]
+  },
+  "rubies-mfb": {
+    "name": "Rubies MFB",
+    "code": "125",
+    "slug": "rubies-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "safe-haven-mfb-ng": {
+    "name": "Safe Haven MFB",
+    "code": "51113",
+    "slug": "safe-haven-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "safe-haven-microfinance-bank-limited-ng": {
+    "name": "Safe Haven Microfinance Bank Limited",
+    "code": "951113",
+    "slug": "safe-haven-microfinance-bank-limited-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "shield-mfb-ng": {
+    "name": "Shield MFB",
+    "code": "50582",
+    "slug": "shield-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "solid-rock-mfb": {
+    "name": "Solid Rock MFB",
+    "code": "50800",
+    "slug": "solid-rock-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "sparkle-microfinance-bank": {
+    "name": "Sparkle Microfinance Bank",
+    "code": "51310",
+    "slug": "sparkle-microfinance-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "stanbic-ibtc-bank": {
+    "name": "Stanbic IBTC Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Stanbic+IBTC+Bank+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG",
+      "KY"
+    ],
+    "code": "221",
+    "slug": "stanbic-ibtc-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "standard-chartered-bank": {
+    "name": "Standard Chartered Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Standard+Chartered+Logo+Color.svg",
+    "ussd": false,
+    "countries": [
+      "NG",
+      "KY"
+    ],
+    "code": "068",
+    "slug": "standard-chartered-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "stellas-mfb": {
+    "name": "Stellas MFB",
+    "code": "51253",
+    "slug": "stellas-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "sterling-bank": {
+    "name": "Sterling Bank",
+    "code": "232",
+    "slug": "sterling-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "suntrust-bank": {
+    "name": "SunTrust Bank",
+    "ussd": false,
+    "corporate": false,
+    "countries": [
+      "NG"
+    ],
+    "code": "100",
+    "slug": "suntrust-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "supreme-mfb-ng": {
+    "name": "Supreme MFB",
+    "code": "50968",
+    "slug": "supreme-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "taj-bank": {
+    "name": "TAJ Bank",
+    "code": "302",
+    "slug": "taj-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "tanadi-microfinance-bank-ng": {
+    "name": "Tanadi Microfinance Bank",
+    "code": "090560",
+    "slug": "tanadi-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "tangerine-money": {
+    "name": "Tangerine Money",
+    "code": "51269",
+    "slug": "tangerine-money",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "tcf-mfb": {
+    "name": "TCF MFB",
+    "code": "51211",
+    "slug": "tcf-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "titan-bank": {
+    "name": "Titan Bank",
+    "code": "102",
+    "slug": "titan-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "titan-paystack": {
+    "name": "Titan Paystack",
+    "code": "100039",
+    "slug": "titan-paystack",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "titan-trust-bank": {
+    "name": "Titan Trust Bank",
+    "ussd": false,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ]
+  },
+  "uc-microfinance-bank-ltd-u-and-c-mfb-ng": {
+    "name": "U&C Microfinance Bank Ltd (U AND C MFB)",
+    "code": "50840",
+    "slug": "uc-microfinance-bank-ltd-u-and-c-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "uhuru-mfb-ng": {
+    "name": "Uhuru MFB",
+    "code": "MFB51322",
+    "slug": "uhuru-mfb-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "unaab-microfinance-bank-limited-ng": {
+    "name": "Unaab Microfinance Bank Limited",
+    "code": "50870",
+    "slug": "unaab-microfinance-bank-limited-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "unical-mfb": {
+    "name": "Unical MFB",
+    "code": "50871",
+    "slug": "unical-mfb",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "unilag-microfinance-bank-ng": {
+    "name": "Unilag Microfinance Bank",
+    "code": "51316",
+    "slug": "unilag-microfinance-bank-ng",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "union-bank-of-nigeria": {
+    "name": "Union Bank of Nigeria",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Union+Bank+Nigeria+Logo+Color.svg",
+    "ussd": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "032",
+    "slug": "union-bank-of-nigeria",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "united-bank-for-africa": {
+    "name": "United Bank For Africa",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/United+Bank+for+Africa+Logo%402x.png",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "033",
+    "slug": "united-bank-for-africa",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "unity-bank": {
+    "name": "Unity Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Unity+Bank+Color.svg",
+    "ussd": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "215",
+    "slug": "unity-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "vfd": {
+    "name": "VFD Microfinance Bank Limited",
+    "code": "566",
+    "slug": "vfd",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "wema-bank": {
+    "name": "Wema Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Wema+Bank+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "035",
+    "slug": "wema-bank",
+    "pay_with_bank": false,
+    "active": true
+  },
+  "zenith-bank": {
+    "name": "Zenith Bank",
+    "icon": "https://okra-images.s3.eu-west-3.amazonaws.com/Zenith+Bank+Logo+Color.svg",
+    "ussd": true,
+    "corporate": true,
+    "countries": [
+      "NG"
+    ],
+    "code": "057",
+    "slug": "zenith-bank",
+    "pay_with_bank": false,
+    "active": true
+  }
+}
