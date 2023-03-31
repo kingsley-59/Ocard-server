@@ -74,7 +74,7 @@ async function generateBanksData(sort = false) {
 
     if (sort) {
         console.log('Sorting banks disctionary');
-        const mapSort = new Map([...BankDictionary.entries()].sort((a, b) => { console.log([a, b]); return compare(a[0], b[0]); }));
+        const mapSort = new Map([...BankDictionary.entries()].sort((a, b) => { return compare(a[0], b[0]); }));
         console.log('Done');
 
         return mapSort;
@@ -101,7 +101,13 @@ async function loadBanks(sort = false) {
         console.log('Merge complete.');
         console.log(`Bank dictionary now contains ${data.size} bank(s).`);
 
-        await saveObjectToJsonFile(Object.fromEntries(data));
+        // convert to array for easy access
+        const banksObject = Object.fromEntries(data);
+        const banksArray = [];
+        for (let bank in banksObject){
+            banksArray.push(banksObject[bank]);
+        }
+        await saveObjectToJsonFile({banks: banksArray});
     } catch (error) {
         console.log('Something went wrong.');
         console.log(error);
