@@ -42,3 +42,12 @@ exports.ChangePinSchema = Joi.object({
     newPin: Joi.string().min(4).max(4).required(),
     retryNewPin: Joi.ref('newPin')
 });
+
+exports.transferSchema = Joi.object({
+    account_name: Joi.string().min(3).required(),
+    account_number: Joi.string().min(10).max(10).required(),
+    bank_code: Joi.string().min(3).max(3).required(),
+    email: Joi.string().email().required(),
+    amount: Joi.number().required(),
+    authorization_code: Joi.string().required()
+});
