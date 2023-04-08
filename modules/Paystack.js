@@ -4,7 +4,7 @@ require('dotenv').config();
 
 
 const API_URL = 'https://api.paystack.co';
-const SECRET_KEY = process.env.PAYSTACK_TEST_SECRET;
+const SECRET_KEY = process.env.PAYSTACK_LIVE_SECRET;
 const paystackRequestConfig = {
     headers: {
         "Authorization": 'Bearer ' + SECRET_KEY,
@@ -70,6 +70,18 @@ exports.verifyTransactionReference = async (reference) => {
         const errorStatus = errorResponse?.status;
         const errorMessage = errResponse?.data?.message || error.message;
         throw createErrorWithStatus(errorMessage, errorStatus);
+    }
+};
+
+exports.refundTransaction = async (reference, amount = undefined) => {
+    const apiUrl = `${API_URL}/refund`;
+    try {
+        const payload = { transaction: reference, amount };
+        const { message, data } = (await axios.post(apiUrl, payload, paystackRequestConfig)).data;
+
+        return {message, data};
+    } catch (error) {
+        throw processRequestError(error);
     }
 };
 
