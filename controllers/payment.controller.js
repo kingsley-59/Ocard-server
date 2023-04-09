@@ -70,16 +70,13 @@ exports.initiateTransfer = async (req, res) => {
         } else badRequestResponse(res, 'Either a card token or a reference is required.');
 
     } catch (error) {
+        console.log(error);
         // refund user if transfer was unsuccessful
-        let refundMsg;
         try {
-            if (userDebited) {
-                const { message } = await refundTransaction(debitReference);
-                refundMsg = message;
-            }
-        } catch (error) {
-            refundMsg = '';
+            let refundMsg = userDebited ? (await refundTransaction(debitReference)).message : null;
+            errorResponse(res, `${error.message}. ${refundMsg}`);
+        } catch (err) {
+            errorResponse(res, `${error.message}.`);
         }
-        errorResponse(res, `${error.message}. ${refundMsg}`);
     }
 };
