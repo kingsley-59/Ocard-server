@@ -13,23 +13,23 @@ const BankRoutes = require('./routes/bank.routes');
 const PaymentRoutes = require('./routes/payment.routes');
 
 // DB connection
-// const MONGODB_URL = process.env.MONGODB_URL;
-// const mongoose = require('mongoose');
+const MONGODB_URL = process.env.MONGODB_URL;
+const mongoose = require('mongoose');
 
-// mongoose
-//   .connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-//   .then(() => {
-//     //don't show the log when it is test
-//     if (process.env.NODE_ENV !== 'test') {
-//       console.log('\nConnected to %s', mongoose.connection.host);
-//       console.log('App is running ... \n');
-//       console.log('Press CTRL + C to stop the process. \n');
-//     }
-//   })
-//   .catch((err) => {
-//     console.error('App starting error:', err.message);
-//     process.exit(1);
-//   });
+mongoose
+  .connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    //don't show the log when it is test
+    if (process.env.NODE_ENV !== 'test') {
+      console.log('\nConnected to %s', mongoose.connection.host);
+      console.log('App is running ... \n');
+      console.log('Press CTRL + C to stop the process. \n');
+    }
+  })
+  .catch((err) => {
+    console.error('App starting error:', err.message);
+    process.exit(1);
+  });
 
 
 var app = express();

@@ -37,6 +37,8 @@ exports.login = async (req, res) => {
     try {
         let condition = phoneNumber ? { phoneNumber } : { email };
         const user = await UserModel.findOne(condition);
+        if (!user) return badRequestResponse(res, "User not found");
+        
         const validPasscode = compare(passcode, user.passcodeHash);
         if (!validPasscode) return unauthorizedResponse(res, "Incorrect password!");
         if (user.status !== 'active') return badRequestResponse(res, `This account has been ${user.status}`);

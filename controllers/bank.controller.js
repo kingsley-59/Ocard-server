@@ -1,25 +1,25 @@
 const { successResponse, errorResponse } = require("../helpers/apiResponse");
-const { resolveBankDetails, listAllBanks } = require("../modules/Paystack");
+const { listAllBanks, resolveBankDetails } = require("../modules/Flutterwave");
+// const { resolveBankDetails, listAllBanks } = require("../modules/Paystack");
 require('dotenv').config();
 
 exports.getBankDetails = async (req, res) => {
     const { accountNumber, bankCode } = req.body;
 
     try {
-        const response = await resolveBankDetails(accountNumber, bankCode) ;
-        console.log(response);
+        const { data, message } = await resolveBankDetails(accountNumber, bankCode);
 
-        successResponse(res, 'Success', response);
+        successResponse(res, message, data);
     } catch (error) {
-        errorResponse(res, error.message);
+        errorResponse(res, error.message, error?.status);
     }
 };
 
 exports.getAllBanks = async (req, res) => {
     try {
-        const response = await listAllBanks();
+        const { message, data } = await listAllBanks();
 
-        successResponse(res, 'Success', {...response, count: response.data.length});
+        successResponse(res, message, { banks: data, count: data?.length });
     } catch (error) {
         errorResponse(res, error.message);
     }

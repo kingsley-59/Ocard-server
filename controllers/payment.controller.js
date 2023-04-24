@@ -15,7 +15,7 @@ exports.verifyTransaction = async (req, res) => {
     const { reference } = req.params;
 
     try {
-        const data = await verifyTransactionReference(reference);
+        const response = await verifyTransactionReference(reference);
 
         // refund transaction
         const { message } = await refundTransaction(reference);
@@ -25,7 +25,7 @@ exports.verifyTransaction = async (req, res) => {
         // check if signature in database, or save he card
 
         // return success for the transaction verification
-        successResponse(res, 'Verification successful. ' + message, data);
+        successResponse(res, 'Verification successful. ' + message, response);
     } catch (error) {
         errorResponse(res, error?.message, error?.status);
     }

@@ -1,5 +1,6 @@
 const { default: axios } = require("axios");
 const { errorResponse } = require("../helpers/apiResponse");
+const processRequestError = require("../helpers/processRequestError");
 require('dotenv').config();
 
 
@@ -16,16 +17,6 @@ function createErrorWithStatus(message = '', status = 400) {
     const error = new Error(message);
     error.status = status;
     return error;
-}
-function processRequestError(error) {
-    const finalError = new Error();
-    const response = error.response;
-    const status = error.status;
-    const message = response.data?.message || error.message;
-    finalError.message = message;
-    finalError.status = status;
-
-    return finalError;
 }
 
 exports.listAllBanks = async (country = 'nigeria') => {
